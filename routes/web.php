@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/jose-carlos-marrufo', 'PracticaController@JoseCarlosMarrufoVazquez');
 Route::get('/VeronicaHuizar', 'PracticaController@VeronicaHuizar');
+Route::get('/Luis_Montes', 'PracticaController@LuisMontesMartinez');
