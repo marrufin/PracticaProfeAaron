@@ -18,4 +18,7 @@ class PracticaController extends Controller
     public function RicardoMartinez(){
         return view('RicardoMartinez');
     }
+    public function MiguelDuenez(){
+        return view('MiguelDuenez');
+    }
 }
