@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('vistas.test');
+    return view('vistas.home');
 });
 
 Route::get('/jose-carlos-marrufo', 'PracticaController@JoseCarlosMarrufoVazquez');

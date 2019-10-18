@@ -1,0 +1,69 @@
+extends /layouts/main
+
+block styles
+    style(type="text/css").
+           .row.lead.garantias,
+           .carousel-div{
+	        border-top:3px solid #DDD;
+	        border-bottom:3px solid #DDD;
+	        padding: 20px 0;
+	        margin-bottom: 15px;
+	        margin-top: 20px;
+           }
+           @media (max-width: 768px){
+           	.row.lead.garantias .col-sm-4{
+               	font-size: 20px;
+               	margin: 10px 0;
+           	}
+           }
+block content
+    div(class="container-fluid")
+        div(class="row")
+            div(class="cell-12")
+                div(data-role="carousel"
+                    data-height="250px"
+                    data-auto-start="true"
+                    data-cls-controls="fg-white"
+                    data-bullets-position="right"
+                    data-control-prev="<span class='mif-chevron-right fg-cyan'></span>"
+                    data-control-next="<span class='mif-chevron-left fg-cyan'></span>")
+                        div(class="slide" data-cover="https://ofertadescuentos.com/wp-content/uploads/2017/02/innovasport-2x1-y-medio-en-tenis-OFFDE.jpg")
+
+    div(class="content fg-gray d-block-edge" style= {'font-size':'22px'})
+        div(class="container-fluid")
+            div(class="row lead garantias")
+                div(class="cell-sm-4 text-center") Tu compra es #[b 100% segura]
+                div(class="cell-sm-4 text-center") Envío Gratis #[b a todo México]
+                div(class="cell-sm-4 text-center") Compra en Línea, Envía y Recoge en tienda
+    div(class="container-fluid pr-10 pl-10")
+        div(class="row")
+            div(class='cell-sm-8')
+                img(height="413px" width="100%" src="https://ofertadescuentos.com/wp-content/uploads/2017/02/innovasport-2x1-y-medio-en-tenis-OFFDE.jpg")
+            div(class="cell-sm-4")
+                img(height="413px" width="100%" src="https://i2.wp.com/liquidazona.com/wp-content/uploads/2017/12/q1-e1512572519713.jpg?resize=410%2C339&ssl=1")
+        div(class="row")
+            div(class='cell-sm-4')
+                img(height="413px" width="100%" src="https://promociondescuentos.com/wp-content/uploads/2017/03/innovasport-cupon-descuento-ropa-calzado-mujeres-ninas-300x200.jpg")
+            div(class='cell-sm-4')
+                img(height="413px" width="100%" src="https://ofertadescuentos.com/wp-content/uploads/2018/12/Innovasport-descuento-en-todo-el-calzado-OFFDE.jpg")
+            div(class='cell-sm-4')
+                img(height="413px" width="100%" src="https://pbs.twimg.com/media/CtEdZ8iWAAAznaE.jpg")
+    div(class="container-fluid pr-10 pl-10")
+        div(class="carousel-div")
+            div(class="row")
+                div(data-role="carousel"
+                    data-height="21/9"
+                    data-auto-start="true"
+                    data-cls-controls="fg-white"
+                    data-bullets-position="right"
+                    data-control-prev="<span class='mif-chevron-right fg-cyan'></span>"
+                    data-control-next="<span class='mif-chevron-left fg-cyan'></span>")
+                        div(class="panel-title text-center text-upper" style={'font-size':"23px", color:"#bd2211"}) Te recomendamos
+                        div(class="carousel-item")
+                            div(class="slide" data-cover="")
+                                div(class="card h-25")
+                                img(src="https://pbs.twimg.com/media/CtEdZ8iWAAAznaE.jpg")
+    div(class="container-fluid pr-10 pl-10")
+        div(class="row")
+            div(class="cell-12")
+                img(src="https://promociondescuentos.com/wp-content/uploads/2015/11/innovasport-promociones-del-buen-fin-2015-1280x720.jpg" height="256px" width="100%")

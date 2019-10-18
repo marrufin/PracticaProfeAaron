@@ -3,19 +3,134 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="css/metro.min.css")
-        link(rel="stylesheet", href="/css/metro-colors.min.css")
+        meta(http-equiv="Content-Type", content="text/html")
+        link(rel="stylesheet", href=asset("css/metro.min.css"))
+        link(rel="stylesheet", href=asset("/css/metro-colors.min.css"))
+        link(rel="stylesheet", href=asset("/css/metro-icons.min.css"))
+        link(rel="stylesheet", href=asset("/css/font-awesome.min.css"))
+        link(rel="stylesheet", href=asset("/css/metro-all.min.css"))
+        link(rel="stylesheet", href=asset("https://cdn.metroui.org.ua/v4/css/metro.min.css"))
+            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-colors.min.css">
+            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-rtl.min.css">
+            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">
+        block styles
         title Innova Sport
     body
-    div(data-role="appbar" data-expand-point="md" class="bg-dark fg-white")
-        ul(class="app-bar-menu")
-            li
-                a(href="#" class="dropdown-toggle") Nuestros conceptos
-                ul(class="d-menu" data-role="dropdown")
-                    li: a(href="#") Invictus
+    
+    header
+        div(class="container-fluid bg-black pl-15 pr-15" style={'border-bottom': '4px solid #1e649f'})
+            div(class="our-concepts" style={'font-size':'14px'})
+                div(class="dropdown")
+                    div(class="nav")
+                        div(class="row fg-white")
+                            div(class="cell-fs-12 p-0")
+                                ul(class="app-bar-menu")
+                                    a(href="#" style={"list-style":'none', color:'white'}) Nuestros Conceptos
+                                        ul(data-role="dropdown")
+                                            li: a(href="#") Invictus
+                                    a(href="#" class="float-right" style={"list-style":'none', color:'white'}) Login / Registrate
+        div(class="container-fluid bg-black pl-15 pr-15")
+            div(class="row")
+                div(class="nav cell-sm-3 cell-md-2 p-0")
+                    div(class="float-left")
+                        img(width="112px" height="100px" src="https://cdn.shopify.com/s/files/1/0899/2262/files/1180.png?4016")
+                div(class="cell-md-4 cell-sm-3 offset-sm-1 offset-md-1")
+                    div(class="row fg-white")
+                        div(class="cell-md-6 cell-sm-6 cell-lg-5 offset-lg-1")
+                            span Envío gratis
+                            div: strong Todo México
+                        div(class="cell-md-6 cell-sm-6 cell-lg-5 offset-lg-1")
+                            span 2 Devoluciones
+                            div: strong Gratis
+                div(class="cell-sm-5 cell-md-5 offset-md-0")
+                    div(class="nav")
+                        div(class="cell-fs-12")
+                            form(action="")
+                                div(class="input-group")
+                                    input(type="text", class="form-control", placeholder="Buscar productos, marcas, deportes y mucho más...")
+                                    button(class="danger") Buscar
+        div(class="container-fluid bg-black pl-15 pr-15")
+            ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" style={"list-style":'none'})
+                li #[a(href="#") Deporte]
+                li #[a(href="#") Hombres]
+                li #[a(href="#") Mujeres]
+                li #[a(href="#") Niños]
+                li #[a(href="#") Niñas]
+                li #[a(href="#") Uniformes]
+                li #[a(href="#") Jerseys]
+                li #[a(href="#") Outlet]
+                li(class="float-right") #[span(class="m-0") Carrito: $0.00]          
+
     block content
 
+    footer(class="footer-bg bg-black fg-white" style={margin: '0 auto', 'padding-top':'15px', 'text-align':'center'})
+        div(class="container")
+            div(class="row")
+                div(class="cell-md-4 fg-white")
+                    h4 ESTATUS DE MI PEDIDO
+                div(class="cell-md-4 fg-white")
+                    h4 FACTURACIÓN ELECTRÓNICA
+                div(class="cell-md-4 fg-white")
+                    h4 CLICK Y COLLECT
+        div(class="container")
+            div(class="row" style={'font-size':'13px'})
+                div(class="footer-nav cell-sm-6 cell-fs-6 cell-md-2 text-left")
+                    div(class="title") COMPRAR EN LÍNEA
+                    ul(style={"list-style":'none', padding:"0", margin:'0', 'text-align':"left"})
+                        li: a(href="#" class="fg-white" title="Centro de ayuda") Centro de ayuda
+                        li: a(href="#" class="fg-white" title="Cambios y devoluciones") Cambios y devoluciones
+                        li: a(href="#" class="fg-white" title="Formas de pago") Formas de pago
+                        li: a(href="#" class="fg-white" title="Seguridad") Seguridad
+                div(class="footer-nav cell-sm-6 cell-fs-6 cell-md-2 text-left")
+                    div(class="title") INNOVASPORT
+                    ul(style={"list-style":'none', padding:"0", margin:'0', 'text-align':"left"})
+                        li: a(href="#" class="fg-white" title="Aviso de privacidad") Aviso de privacidad
+                        li: a(href="#" class="fg-white" title="Términos y condiciones") Términos y condiciones
+                        li: a(href="#" class="fg-white" title="Acceso proveedores") Acceso proveedores
+                        li: a(href="#" class="fg-white" title="Sucursales") Sucursales
+                div(class="footer-nav cell-sm-6 cell-fs-6 cell-md-2 text-left")
+                    div(class="title") SERVICIOS
+                    ul(style={"list-style":'none', padding:"0", margin:'0', 'text-align':"left"})
+                        li: a(href="#" class="fg-white" title="Tarjeta de regalo") Tarjeta de regalo
+                        li: a(href="#" class="fg-white" title="Uniformes") Uniformes
+                        li: a(href="#" class="fg-white" title="Ventas corporativas") Ventas Corporativas
+                        li: a(href="#" class="fg-white" title="Impresión de playeras") Impresión de playeras
+                div(class="footer-nav cell-sm-6 cell-fs-6 cell-md-2 text-left")
+                    div(class="title") NUESTROS CONCEPTOS
+                    ul(style={"list-style":'none', padding:"0", margin:'0', 'text-align':"left"})
+                        li: a(href="#" class="fg-white" title="Tarjeta de regalo") Invictus
+                        li: a(href="#" class="fg-white" title="Uniformes") Blog
+                div(class="footer-nav cell-fs-12 cell-sm-6 cell-md-4")
+                    div(class="title text-left") BOLETÍN INFORMATIVO
+                    div(class="text-center") Suscribete a nuetro newsletter y recibe nuestras promociones directamente en tu correo
+                    form(action="")
+                        div(class="form-group")
+                            input(type="email", placeholder="Escribe aquí tu correo")
+                        div(class="d-block-no-touch")
+                            input(type="button", value="HOMBRE" class="button primary" style={width:"49%", 'border-radius':"50px 0 0 50px !important", margin:'10px 2px 0 0'})
+                            input(type="button", value="MUJER" class="button primary" style={width:"49%", 'border-radius':"0 50px 50px 0 !important", margin:'10px 2px 0 0'})
+                    div
+                        ul
+                            li: a(title="Facebook" class="fa fa-facebook-square" href="https://www.facebook.com/innovasport" target="_blank")
+        div(class="container")
+            div(class="row")
+                div(class="cell-md-4 text-center")
+                    h3(class="text-upper" style= {'font-size':'22px', margin:"20px 0 0"}) Llámanos
+                    span 800-146-6682
+                div(class="cell-md-4 text-center")
+                    h3(class="text-upper" style= {'font-size':'22px', margin:"20px 0 0"}) Horarios de atención
+                    span Lunes a sábado: 8:00 a 20:00
+                    br
+                    span Domingo: 10:00 a 18:30 
+                div(class="cell-md-4 text-center")
+                    h3(class="text-upper" style= {'font-size':'22px', margin:"20px 0 0"}) Preguntas frecuentes
+        
+        div(class="container")
+            div(class="cell-md-12")
+                div(class="for-bottom text-left") © 2019 Innovasport. Todos los Derechos Reservados.
 
-    script(src="js/metro.min.js")
+    script(src=asset("js/metro.min.js"))
+    script(src="js/jquery-3.3.1.min.js")
+    script.
+        console.log($("#div-test"))
           
