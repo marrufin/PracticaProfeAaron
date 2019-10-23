@@ -21,4 +21,7 @@ class PracticaController extends Controller
     public function MiguelDuenez(){
         return view('MiguelDuenez');
     }
+     public function Login(){
+        return view('vistas.Login');
+    }
 }
