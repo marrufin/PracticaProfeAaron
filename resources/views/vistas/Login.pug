@@ -3,14 +3,67 @@ extends /layouts/main
 block styles
 
 block content
-        h3 INICIA SESIÓN
-        div(class="form-group")
+        div(class="container")
+                ul(class="breadcrumbs")
+                        li(class="page-item"): a(href="#" class="page-link") Inicio
+                        li(class="page-item"): a(href="#" class="page-link") Login
+                        li(class="page-item"): a(href="#" class="page-link") Registrate
+        div
+                div(class="container" style={color:"#555"})
+                        div(class="row")
+                                div(class="cell-md-6")
+                                        h3 INICIA SESIÓN
+                                        form(action="", method="post")
+                                                div(class="form-group")
+                                                        label Email
+                                                        input(type="email")
+                                                div(class="form-group")
+                                                        label Contraseña
+                                                        input(type="password")
+                                                div
+                                                        input(type="checkbox")
+                                                        label Recordarme
+                                                div
+                                                        button(class="button", type="submit", style={width:"100%", 'margin-top':"20px", color:"#888888"}) INGRESAR
+                                                div(style={float:"right"}).
+                                                        Campos obligatorios
+                                div(class="cell-md-6")
+                                        h3 NUEVOS CLIENTES
+                                        div(style={color:"#888", 'padding-botom':'20px', 'border-bottom': "1px solid #eee", 'font-size':'12.5px', 'margin-bottom':"20px"}).
+                                                Al crear una cuenta con nuestra tienda podrás moverte más rápidamente por el proceso de pago, 
+                                                guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más.
+                                        form(action="", method="post")
+                                                div(class="row")
+                                                        div(class="cell-md-6")
+                                                                label Nombre
+                                                                input(type="text")
+                                                        div(class="cell-md-6")
+                                                                label Apellido
+                                                                input(type="text")
+                                                        div(class="cell-md-6")
+                                                                label(style={'max-width':'100%'}) Sexo
+                                                                br
+                                                                input(type="radio", name="gender" value="MALE")
+                                                                label(for="MALE") Hombre
+                                                                input(type="radio", name="gender" value="FEMALE")
+                                                                label(for="MALE") Mujer
+                                                        div(class="cell-md-6")
+                                                                label Fecha de nacimiento
+                                                                input(type="text")
+                                                        div(class="cell-md-6")
+                                                                label Celular
+                                                                input(type="text")
+                                                        div(class="cell-md-6")
+                                                                label Email
+                                                                input(type="text", placeholder="email@dominio.com")
+                                                        div(class="cell-md-6")
+                                                                label Contraseña
+                                                                input(type="text")
+                                                                div(style={display:'block'}) La longitud mínima es de 6 caracteres
+                                                        div(class="cell-md-6")
+                                                                label Confirmar contraseña
+                                                                input(type="text")
 
-                    div: p: span Email*
-                    input(type="text", class="form-control", placeholder="")
-                    div: p: span Contraseña*
-                    input(type="text", class="form-control", placeholder="")
-                    <a href="home.pug"><button type="button">Ingresar</button></a>
                                   
 
 

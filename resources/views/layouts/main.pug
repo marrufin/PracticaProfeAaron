@@ -10,33 +10,36 @@ html(lang="en")
         link(rel="stylesheet", href=asset("/css/font-awesome.min.css"))
         link(rel="stylesheet", href=asset("/css/metro-all.min.css"))
         link(rel="stylesheet", href=asset("https://cdn.metroui.org.ua/v4/css/metro.min.css"))
-            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-colors.min.css">
-            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-rtl.min.css">
-            //- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">
         block styles
         title Innova Sport
+        style.
+            .hover {
+                background-color: #bd2211;
+            }
     body
     
-    header
+    header(style={'border-bottom': '4px solid #bd2211'})
         div(class="container-fluid bg-black pl-15 pr-15" style={'border-bottom': '4px solid #1e649f'})
             div(class="our-concepts" style={'font-size':'14px'})
                 div(class="dropdown")
                     div(class="nav")
                         div(class="row fg-white")
                             div(class="cell-fs-12 p-0")
-                                ul(class="app-bar-menu")
+                                ul(class="app-bar-menu m-0 p-2")
                                     a(href="#" style={"list-style":'none', color:'white'}) Nuestros Conceptos
                                         ul(data-role="dropdown")
                                             li: a(href="#") Invictus
-                                    a(href="#" class="float-right" style={"list-style":'none', color:'white'}) Login / Registrate
+                                    a(href="/login" class="float-right" style={"list-style":'none', color:'white'}) Login / Registrate
         div(class="container-fluid bg-black pl-15 pr-15")
             div(class="row")
                 div(class="nav cell-sm-3 cell-md-2 p-0")
                     div(class="float-left")
-                        img(width="112px" height="100px" src="https://cdn.shopify.com/s/files/1/0899/2262/files/1180.png?4016")
-                div(class="cell-md-4 cell-sm-3 offset-sm-1 offset-md-1")
+                        a(href="/")
+                            img(width="112px" height="100px" src="https://cdn.shopify.com/s/files/1/0899/2262/files/1180.png?4016")
+                div(class="cell-md-4 cell-sm-3 offset-sm-1 offset-md-1" style={'font-size': '13px'})
                     div(class="row fg-white")
                         div(class="cell-md-6 cell-sm-6 cell-lg-5 offset-lg-1")
+                            span(class="mif-truck")
                             span Envío gratis
                             div: strong Todo México
                         div(class="cell-md-6 cell-sm-6 cell-lg-5 offset-lg-1")
@@ -50,20 +53,20 @@ html(lang="en")
                                     input(type="text", class="form-control", placeholder="Buscar productos, marcas, deportes y mucho más...")
                                     button(class="danger") Buscar
         div(class="container-fluid bg-black pl-15 pr-15")
-            ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" style={"list-style":'none'})
-                li #[a(href="#") Deporte]
+            ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" id="menu-container" style={"list-style":'none'})
+                li #[a(href="#" title="Deporte" style={'font-size': '13px'}) Deporte]
                 li #[a(href="#") Hombres]
                 li #[a(href="#") Mujeres]
                 li #[a(href="#") Niños]
                 li #[a(href="#") Niñas]
                 li #[a(href="#") Uniformes]
-                li #[a(href="#") Jerseys]
+                li #[a(href="/jerseys") Jerseys]
                 li #[a(href="#") Outlet]
                 li(class="float-right") #[span(class="m-0") Carrito: $0.00]          
 
     block content
 
-    footer(class="footer-bg bg-black fg-white" style={margin: '0 auto', 'padding-top':'15px', 'text-align':'center'})
+    footer(class="footer-bg bg-black fg-white" style={margin: '0 auto', 'margin-top':'30px', 'text-align':'center'})
         div(class="container")
             div(class="row")
                 div(class="cell-md-4 fg-white")
@@ -71,7 +74,7 @@ html(lang="en")
                 div(class="cell-md-4 fg-white")
                     h4 FACTURACIÓN ELECTRÓNICA
                 div(class="cell-md-4 fg-white")
-                    h4 CLICK Y COLLECT
+                    h4 CLICK & COLLECT
         div(class="container")
             div(class="row" style={'font-size':'13px'})
                 div(class="footer-nav cell-sm-6 cell-fs-6 cell-md-2 text-left")
@@ -111,7 +114,8 @@ html(lang="en")
                             input(type="button", value="MUJER" class="button primary" style={width:"49%", 'border-radius':"0 50px 50px 0 !important", margin:'10px 2px 0 0'})
                     div
                         ul
-                            li: a(title="Facebook" class="fa fa-facebook-square" href="https://www.facebook.com/innovasport" target="_blank")
+                            span(class="mif-github mif-2x")
+                            li: a(title="Facebook" class="mif-facebook2" href="https://www.facebook.com/innovasport" target="_blank")
         div(class="container")
             div(class="row")
                 div(class="cell-md-4 text-center")
@@ -132,5 +136,9 @@ html(lang="en")
     script(src=asset("js/metro.min.js"))
     script(src="js/jquery-3.3.1.min.js")
     script.
-        console.log($("#div-test"))
+        $('.h-menu').children().children().hover(function(){
+            $(this).css('background-color', "#bd2211")
+        }, function(){
+            $(this).css('background-color', "black")
+        })
           
