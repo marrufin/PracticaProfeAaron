@@ -22,4 +22,3 @@ Route::get('/RicardoMartinez', 'PracticaController@RicardoMartinez');
 Route::get('/MiguelDuenez', 'PracticaController@MiguelDuenez');
 Route::get('/login', 'PracticaController@login');
 Route::get('/jersey', 'PracticaController@jersey');
-Route::get('/Hombre', 'PracticaController@Hombre');
