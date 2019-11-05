@@ -1,0 +1,82 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="/ninas" class="page-link") Mujeres Oficiales
+	div(class="wrap")
+		div(class="store-wrapper")
+			div(class="category_list")
+				a(href="#" class="category_item" category="vestidos") Vestidos
+				a(href="#" class="category_item" category="Acuáticos") Acuáticos
+				a(href="#" class="category_item" category="Tenis") Tenis
+				a(href="#" class="category_item" category="LEGGING") Legging
+                a(href="#" class="category_item" category="Short") Short 
+			section(class="products-list")
+				div(class="product-item" category="vestidos")
+					img(src=asset("/img_innova/mujeres/1ves.jpg") , alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="vestidos")
+					img(src=asset("/img_innova/mujeres/2ves.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="vestidos")
+					img(src=asset("/img_innova/mujeres/3ves.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="vestidos")
+					img(src=asset("/img_innova/mujeres/4ves.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Acuáticos")
+					img(src=asset("/img_innova/mujeres/1traje.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Acuáticos")
+					img(src=asset("/img_innova/mujeres/2traje.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Acuáticos")
+					img(src=asset("/img_innova/mujeres/3traje.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Acuáticos")
+					img(src=asset("/img_innova/mujeres/4traje.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/mujeres/1beb.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/mujeres/2beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/mujeres/3beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/mujeres/4beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="LEGGING")
+					img(src=asset("/img_innova/mujeres/1LEGGING.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="LEGGING")
+					img(src=asset("/img_innova/mujeres/2LEGGING.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="LEGGING")
+					img(src=asset("/img_innova/mujeres/3LEGGING.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="LEGGING")
+					img(src=asset("/img_innova/mujeres/4LEGGING.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Short")
+					img(src=asset("/img_innova/mujeres/1Short.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Short")
+					img(src=asset("/img_innova/mujeres/2Short.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Short")
+					img(src=asset("/img_innova/mujeres/3Short.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Short")
+					img(src=asset("/img_innova/mujeres/5Short.jpg"), alt="OLV")
+					a(href="#") POSER

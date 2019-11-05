@@ -26,3 +26,4 @@ Route::get('/ninos', 'PracticaController@ninos');
 Route::get('/jersey', 'PracticaController@jersey');
 Route::get('/Hombre', 'PracticaController@Hombre');
 Route::get('/ninas', 'PracticaController@ninas');
+Route::get('/mujeres', 'PracticaController@mujeres');
