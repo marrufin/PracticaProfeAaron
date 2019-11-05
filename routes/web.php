@@ -21,5 +21,10 @@ Route::get('/Luis_Montes', 'PracticaController@LuisMontesMartinez');
 Route::get('/RicardoMartinez', 'PracticaController@RicardoMartinez');
 Route::get('/MiguelDuenez', 'PracticaController@MiguelDuenez');
 Route::get('/login', 'PracticaController@login');
+<<<<<<< HEAD
 Route::get('/jerseys', 'PracticaController@jersey');
 Route::get('/ninos', 'PracticaController@ninos');
+=======
+Route::get('/jersey', 'PracticaController@jersey');
+Route::get('/Hombre', 'PracticaController@Hombre');
+>>>>>>> f6392160fddfc6c3a2d5ee18d57f067964159782
