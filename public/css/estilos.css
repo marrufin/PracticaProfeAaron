@@ -37,6 +37,50 @@ body{
 	flex-wrap: wrap;
 }
 
+#description{
+	box-sizing: border-box;
+	color: rgb(136, 136, 136);
+	font-family: "Lato";
+	font-size: 13px;
+	font-weight: 100;
+	line-height: 18.5667px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: left;
+	white-space: nowrap;
+}
+
+#brand{
+	box-sizing: border-box;
+	color: rgb(189, 34, 17);
+	font-family: "Lato";
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 18.5667px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: left;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#price{
+	box-sizing: border-box;
+	color: rgb(68, 68, 68);
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28.5667px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: left;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
 .category_list{
 	display: flex;
 	flex-direction: column;
