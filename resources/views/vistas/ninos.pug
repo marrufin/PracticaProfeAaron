@@ -2,26 +2,22 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
 	//- script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
 block content
 	div(class="container")
 		ul(class="breadcrumbs")
 			li(class="page-item")
 				a(href="/" class="page-link") Inicio
 			li(class="page-item")
-				a(href="#" class="page-link") Jerseys Oficiales
+				a(href="#" class="page-link") Niños Oficiales
 	div(class="wrap")
 		div(class="store-wrapper")
 			div(class="category_list")
-				a(href="#" class="category_item" category="all") TODO
-				a(href="#" class="category_item" category="futbol") FÚTBOL
-				a(href="#" class="category_item" category="nfl") NFL
-				a(href="#" class="category_item" category="adulto") ADULTO
-				a(href="#" class="category_item" category="baseball") BASEBALL
-				a(href="#" class="category_item" category="all")
-				a(href="#" class="category_item" category="all")
+				a(href="#" class="category_item" category="futbol") Fùtbol 
+				a(href="#" class="category_item" category="nfl") Nataciòn
+				a(href="#" class="category_item" category="adulto") Bebè
+				a(href="#" class="category_item" category="baseball") Básquetbol
 			section(class="products-list")
 				div(class="product-item" category="futbol")
 					img(src="https://cdn.shopify.com/s/files/1/0771/0055/products/001-3385-022_zoom1_clipped_rev_1_grande.png?v=1499430000", alt="OLV")
@@ -32,7 +28,7 @@ block content
 				div(class="product-item" category="futbol")
 					img(src="https://http2.mlstatic.com/D_NQ_NP_748427-MLM26549930997_122017-O.jpg", alt="OLV")
 					a(href="#") POSER
-				div(class="product-item" category="")
+				div(class="product-item" category="all")
 					img(src="https://www.trzcacak.rs/myfile/detail/342-3423279_nike-nfl-oakland-raiders-color-rush-limited-womens.png", alt="OLV")
 					a(href="#") POSER
 				div(class="product-item" category="")
