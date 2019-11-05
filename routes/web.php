@@ -22,3 +22,4 @@ Route::get('/RicardoMartinez', 'PracticaController@RicardoMartinez');
 Route::get('/MiguelDuenez', 'PracticaController@MiguelDuenez');
 Route::get('/login', 'PracticaController@login');
 Route::get('/jerseys', 'PracticaController@jersey');
+Route::get('/ninos', 'PracticaController@ninos');
