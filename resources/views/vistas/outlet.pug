@@ -1,0 +1,125 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="#" class="page-link") Outlet
+	div(class="wrap")
+		div(class="store-wrapper")
+			div(class="category_list")
+				a(href="#" class="category_item" category="descuento") DESCUENTO
+				a(href="#" class="category_item" category="precio") PRECIO
+				a(href="#" class="category_item" category="deporte") DEPORTE
+				a(href="#" class="category_item" category="tipo") TIPO
+				a(href="#" class="category_item" category="estilo") ESTILO
+				a(href="#" class="category_item" category="genero") GENERO
+                a(href="#" class="category_item" category="marca") MARCA
+                a(href="#" class="category_item" category="colores") COLORES
+                a(href="#" class="category_item" category="talla") TALLA
+                a(href="#" class="category_item" category="talla calsado") TALLA CALSADO
+                a(href="#" class="category_item" category="talla accesorios") TALLA ACCESORIOS
+                a(href="#" class="category_item" category="lo mas nuevo") LO MAS NUEVO
+			section(class="products-list")
+				div(class="product-item" category="descuento")
+					img(src="https://www.innovasport.com/medias/CZ8019-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzA5NXxpbWFnZS9qcGVnfGltYWdlcy9oMjYvaGI3Lzg4MjYzNTA3NjQwNjIuanBnfGE2NjZmYzUzNmRkMTY1NzNiYzdjZWY1NTZjMjQ4OTNhMWQ0YzFlMWQ0YmYxMGZlNzM3ZmZlNjIxMzAzZmViZTg", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/DB0275-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTQ5NHxpbWFnZS9qcGVnfGltYWdlcy9oMGIvaGE4Lzg5MjA1MTM5NzAyMDYuanBnfGVhODgwZmIxZDQ0ZjkzMTcwYWUwNjI1Y2ZjZWJhYTE1OWIxNjdiNjQ2MjE5NmI5NTkyY2NlMzk2OGQzNDFkMGE", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/AO9469-170-1.jpg?context=bWFzdGVyfGltYWdlc3wxMzM5M3xpbWFnZS9qcGVnfGltYWdlcy9oNzkvaGVjLzg5MTEyNDIwMDI0NjIuanBnfDA2YjM3YmIwYjE1ZTg0NTg3NTc4ZTQ4M2M4NWYzOWJlNzdkMDkwODFmNDFmNTY4YmU3MzU3ODU3MTIyODAwYmY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/AO7540-600-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDQwNXxpbWFnZS9qcGVnfGltYWdlcy9oMmIvaDNlLzg5MDYwMTU4NjY5MTAuanBnfGUzMDhhMjY2MDc0OWE0MTExODIzMjM0ZDExZWE4MTVjOTEwMjJjMmRjNWIzZDBmZjI5MWQ3YzMxZjY0ZGQzNmQ", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/AO9466-170-1.jpg?context=bWFzdGVyfGltYWdlc3wxODQ0MHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaGUzLzg5MDY3NDY0NjIyMzguanBnfGY3NDYwNTIzZjJhZTIzMzdkZDIxMmI0ZDE0MTc1ZTRjMzQ3OWNiNmViMzQ2OWU5YmJiYjNlZmQyMTk0YThiN2I", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/AO3121-170-1.jpg?context=bWFzdGVyfGltYWdlc3wxMzY3N3xpbWFnZS9qcGVnfGltYWdlcy9oNTQvaGQ2Lzg5MTEyNDA0Mjk1OTguanBnfDIyYmY2ZmUwMGIwMDk4OTVjNzJkZWY3MzA4MjU5Y2RiMTQyYTQ4MDEwYzFkMWJjNmJlZjI3NjBkYjliNzIxOGU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/AO2886-170-1.jpg?context=bWFzdGVyfGltYWdlc3wyMDY5M3xpbWFnZS9qcGVnfGltYWdlcy9oODIvaDYxLzg5MDU1MDczNzMwODYuanBnfGM5OTRmZGUwYmNlMjViNGE0OTFmMDFjM2Y2MTFhOTZlZGE2NDI0YWFmNzZlNjc1NDhjZGQzMWJkMzU2ZTk1ZWQ", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/AO0362-600-1.jpg?context=bWFzdGVyfGltYWdlc3wxOTkyN3xpbWFnZS9qcGVnfGltYWdlcy9oNGUvaDJmLzg4OTAzNDkyMjM5NjYuanBnfGQ0ZGFmYThiYTI5NmUxMjJmMmQ4NmMzMTVkOWU1NDljM2RmNjMwZGQwNTliY2UzM2U4MTlkZGM2MGQ1MWM0NWQ", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="descuento")
+					img(src="https://www.innovasport.com/medias/AO2810-104-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzE0NnxpbWFnZS9qcGVnfGltYWdlcy9oYTAvaDhmLzg5MDA1NjkwNzE2NDYuanBnfDNkMzkyZmMwZGUwYjhkZWNlNGY2NDRiZThlZmJiYzk5M2JhNWI0OTczYTg1MjFlMjQ3MzAwNGM4NjMxYTViYmY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/190511-17-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDc5NXxpbWFnZS9qcGVnfGltYWdlcy9oNGUvaDIwLzg4OTAyMjYxNDczNTguanBnfDk4ZTllMjgwMDAyMWI0MGNjZDM2N2FiZjU2ZTMzZjQxZTI1NDY4OGNjNWQ3OTI2YzUwODY1NDBjNDczMzVlMDU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/922856-006-1.jpg?context=bWFzdGVyfGltYWdlc3wxMTIyMnxpbWFnZS9qcGVnfGltYWdlcy9oMWQvaDM0Lzg4OTg2MTM4MDUwODYuanBnfDY3NzA1YzgwMzU0ZmE5MDcwZjc1YTRlYjc4YjMyNzE4ZGY0MTkzMjZmZDBjNDA2MGRiOWQ3MDIyMzM3MjkxMzI", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/AQ1769-801-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDAxNXxpbWFnZS9qcGVnfGltYWdlcy9oMjMvaDllLzg4OTk3MDQyMjU4MjIuanBnfDU2MDkzYjIwOTQwNjQzNjU4MjM2NWZhOWNhMTQwOWNhYWM4MjhhYzMzOWY4MWRjMDI2OThjNmUyZWUzODAyMDY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/HE100173S8C-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTgzOHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDNiLzg4ODUyNDIyMzI4NjIuanBnfDE5YzIwMzhhOGNiZGU1MzJkOTM2ZTQ4ODExYWIyOWNmNWE0YmI1NzA0YzZhNDI0ZmUyNzk0YTJlNWRmNTg1ZWY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/191572-05-1.jpg?context=bWFzdGVyfGltYWdlc3wyOTcxN3xpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGE1Lzg5MDQwMDM5NzcyNDYuanBnfDI2MTI1MzQ0MjA3YjZkZDMwYmM1N2VlNjdlZmQ3OWE5NjBiYWFlNzcwNGRkMDE5ODg2YjFkNTM3YjllOGE1Mjc", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/303992-414-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzA0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDEvaDY1Lzg5MDA1OTc2NDUzNDIuanBnfDYxNmRmNGMxMTNjOWI5N2ZhOWZjNWNjYjkzY2U2YjljMWM5YjkwMjU2MzkwOGJjZGMxZDExMDIyMTcwOWQ3NGY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/192327-01-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDE5NXxpbWFnZS9qcGVnfGltYWdlcy9oYzYvaGFmLzg4OTcwNjI3OTczNDIuanBnfDgwMmQ5YTdkODk1YzgwOWExMGE3MDQ0YjFjOGQ5MTU5MzJjYWMxMDdhZjgzOGM4MmI1ZDEzN2ZjMzMyZDA5ZWY", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="descuento")
+					img(src="https://www.innovasport.com/medias/367309-06-1.jpg?context=bWFzdGVyfGltYWdlc3wyNjgyN3xpbWFnZS9qcGVnfGltYWdlcy9oMTkvaDgzLzg5MDQwMTE5MDcxMDIuanBnfGRkYTg0NjZmZTE1NTllODkxOGYyZjg4ZDVmMjViNzNjYjI1OGJiYmY5ZjBhOWJmNWMyNzRkMGQ2NmMxZTY2OGI", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/365249-01-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzEyOHxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDE3Lzg5MDA2MDAwMDQ2MzguanBnfDIxYzdhZDI4MzhkYjk2Njg4NGQxNjlkMjlmN2M3NTg2YjgxODk2OTBkMTBhN2IyZjU4MzRlZjUzYjdkYmZhZGU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/AO8738-600-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc4NHxpbWFnZS9qcGVnfGltYWdlcy9oNWMvaDlkLzg4OTgwMzU0NDk4ODYuanBnfDI2MmY2ZjJhNjA2YzQyMjE2NTE1ZjVhZjA3Mzk0MTc4YzU5NDhjMDNiNWExM2NhNTI3NTBmMmUwMjA2ZmRkMDg", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/AO3262-600-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTQwOXxpbWFnZS9qcGVnfGltYWdlcy9oM2YvaDRiLzg4OTgwMjk5Nzc2MzAuanBnfGZmYjk0MjUxMjVlZTg5MzE0Njg5MDk5OGNkZjcyMDE2ZWJhMzQ2ZTUwNzk5N2YxMWY1MWU1MTdkMGQ2MTI1ZDU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/AH7369-070-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzk2NXxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaGIzLzg4OTgwMTI3MDg4OTQuanBnfDVmODFjMGMwZTIyM2IxZjYwNjE3MjI3MThmODI3ZGE3MmQ0YmM0MWM3NTg0YmFmYWRiNDgxNjRhNTdlZGViZTk", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/IS-00770512B7C-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTQ1OXxpbWFnZS9qcGVnfGltYWdlcy9oZjUvaDdhLzkwNzczNzIzMjE4MjIuanBnfGNmMjE2NzMzMjQ1ZTU4MDM2MTA0MjVhYzQwMjE5ZGE3NzgyYTZmOWFmYjYyMjBhYmJhYjdlM2Y0YzdlMTYyYjM", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/916776-008-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oY2YvaDAzLzg5MDU0NjMwMDUyMTQuanBnfGI0ODlmY2NmNzYxOGI4MTIzZjY2NGNhZGNmYTlmYWUyZGY0MDg5OTJjZDdiMzBmNTkyYzk3NDk4N2Q0ZTgwMDQ", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/749869-102-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTQzOXxpbWFnZS9qcGVnfGltYWdlcy9oZGIvaGY4Lzg5MDM2ODk0MDQ0NDYuanBnfGE0YjZjZDY1ZjEyODE4OTg4NzZjY2FjZDRhZmJlMGNlN2UzNWQ1NmI5ZjYzZmViM2EwMmVkM2NhYjljZGY5MWU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="descuento")
+					img(src="https://www.innovasport.com/medias/3021221-001-1.jpg?context=bWFzdGVyfGltYWdlc3wxMzQ0OXxpbWFnZS9qcGVnfGltYWdlcy9oMWUvaGZlLzg5MDIwMTExMjU3OTAuanBnfGM3MzMxMWEwOTNjOGZiOTEwMGIwZjc2OTcyY2JmMjZiNjUyNmY5OWYyZDMyYTY1MjEyY2IwYTM4NzU4Y2Q0OGU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/190508-19-1.jpg?context=bWFzdGVyfGltYWdlc3wyMzA1NHxpbWFnZS9qcGVnfGltYWdlcy9oZjYvaGVmLzg4OTk5MjY3MjA1NDIuanBnfGQ4N2NkNDk2ZGQyODRlODg0MjNkMDI5ZTFjY2E2YzUyNDVhMzE0YzNmMmYxMWY2MjRjODA1NDg2Y2QzNmMxZTE", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="precio")
+					img(src="https://www.innovasport.com/medias/191572-06-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDgxOXxpbWFnZS9qcGVnfGltYWdlcy9oODgvaGRiLzg5NDU3MjAzMjgyMjIuanBnfGE2NTEzNGViYjRhZDIwZDYyODY5ZDhlNThmYWI0MWVhMjFlYmJlNDc0NDUyYzYxNGNhYWUzNGNkNmI2NTZhYjU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/191573-08-1.jpg?context=bWFzdGVyfGltYWdlc3wxNzUwM3xpbWFnZS9qcGVnfGltYWdlcy9oNmMvaGEwLzkwMDY3NDU0NTI1NzQuanBnfDczYWE1Y2M5NTE3OWUwYWY2N2EwZWIyNWJjYTM4YWJkMmJiMWZmZGEwMDU1MzE1ZTFhN2Y2MzQwODYxNzc2NGU", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="deporte")
+					img(src="https://www.innovasport.com/medias/191572-08-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTk5M3xpbWFnZS9qcGVnfGltYWdlcy9oNWUvaGZjLzg5NDU3MjE5MDEwODYuanBnfDQ1M2FhMTZjN2JmZTI4NGE2NGFkMmZkYTc2ZTVjNzU5MmYyYmFhYTQ3Zjg5OTU1MGEwM2FmNWJkZDc0YzEyZjc", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/192316-01-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDU1NHxpbWFnZS9qcGVnfGltYWdlcy9oNzAvaDhhLzg5ODIxOTA3NTE3NzQuanBnfGQ2ZmViZWQzNDBhZjJiMTYzMjBlODIyZGNmMjY4ZDA4ZTE5OWRlMTM0YWVmMDMzZjJmZDJiMzA4NDhlMjZmZTg", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/191571-06-1.jpg?context=bWFzdGVyfGltYWdlc3wxMzg2MnxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaDFlLzg5NDU3MTcwNTE0MjIuanBnfDg4NjAwYjRjMjc4MTNiZjZjYzdiMTQ5NzNiZWJkODExYjhjY2QyZmIwYTA1YWM2MmE3MjQ5MTM5MDA1OGM3NzM", alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="talla calsado")
+					img(src="https://www.innovasport.com/medias/192316-02-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTUzNHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDc4Lzg5NDkzNDA3NjYyMzguanBnfDJjNjQ0OTk5NDM0NzEwZWQwMmRiZWNlN2IzZjU5NjQyYmZkMjkzMTFjMjVhM2Y0NzNlMjkzMTAwODBjZDY3YmM", alt="OLV")
+					a(href="#") POSER
