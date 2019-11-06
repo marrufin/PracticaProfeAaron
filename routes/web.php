@@ -30,3 +30,4 @@ Route::get('/jersey', 'PracticaController@jersey');
 Route::get('/Hombre', 'PracticaController@Hombre');
 Route::get('/ninas', 'PracticaController@ninas');
 Route::get('/mujeres', 'PracticaController@mujeres');
+Route::get('/Uniformes', 'PracticaController@uniformes');
