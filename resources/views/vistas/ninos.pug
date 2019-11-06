@@ -2,8 +2,6 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	//- script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
 block content
 	div(class="container")
 		ul(class="breadcrumbs")
@@ -11,45 +9,12 @@ block content
 				a(href="/" class="page-link") Inicio
 			li(class="page-item")
 				a(href="#" class="page-link") Niños Oficiales
-	div(class="wrap")
-		div(class="store-wrapper")
-			div(class="category_list")
-				a(href="#" class="category_item" category="futbol") Fùtbol 
-				a(href="#" class="category_item" category="nfl") Nataciòn
-				a(href="#" class="category_item" category="adulto") Bebè
-				a(href="#" class="category_item" category="baseball") Básquetbol
-			section(class="products-list")
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="all")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="baseball")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="baseball")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="baseball")
-					img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
-					a(href="#") POSER
-				a(href="/ninos" class="page-link") Niños Oficiales
 		div(class="wrap")
 			div(class="store-wrapper")
 				div(class="category_list")
 					a(href="#" class="category_item" category="all") Todo
 					a(href="#" class="category_item" category="futbol") Fùtbol 
-					a(href="#" class="category_item" category="Nataciòn") Nataciòn
+					a(href="#" class="category_item" category="Natación") Nataciòn
 					a(href="#" class="category_item" category="Tenis") Tenis
 					a(href="#" class="category_item" category="Básquetbol") Básquetbol
 				section(class="products-list")

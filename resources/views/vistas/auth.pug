@@ -169,7 +169,7 @@ html(lang="en")
                 div(class="footer-nav cell-fs-12 cell-sm-6 cell-md-4")
                     div(class="title text-left") BOLETÍN INFORMATIVO
                     div(class="text-center") Suscribete a nuetro newsletter y recibe nuestras promociones directamente en tu correo
-                    form(action="")
+                    form(id="form-newsLetter")
                         div(class="form-group")
                             input(type="email", id="email-suscribe", placeholder="Escribe aquí tu correo")
                         div(class="d-block-no-touch")
@@ -260,6 +260,7 @@ html(lang="en")
                     }).
                     done((response) => {
                         toastr.success(response.message)
+                        $('#form-newsLetter')[0].reset()
                         
                     }).
                     fail((error) => {

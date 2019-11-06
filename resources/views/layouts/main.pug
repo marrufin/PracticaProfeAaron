@@ -59,15 +59,10 @@ html(lang="en")
                                     button(class="danger") Buscar
         div(class="container-fluid bg-black pl-15 pr-15")
             ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" id="menu-container" style={"list-style":'none'})
-                li #[a(href="/deportes" title="Deporte" style={'font-size': '13px'}) Deporte]
-                li #[a(href="#") Hombres]
+                li #[a(href="/deportes" title="Deporte") Deporte]
                 li #[a(href="/Hombre") Hombre]
                 li #[a(href="/mujeres") Mujeres]
                 li #[a(href="/ninos") Niños]
-                li #[a(href="#") Niñas]
-                li #[a(href="#") Uniformes]
-                li #[a(href="/jersey") Jerseys]
-                li #[a(href="#") Outlet]
                 li #[a(href="/ninas") Niñas]
                 li #[a(href="/Uniformes") Uniformes]
                 li #[a(href="/jerseys") Jerseys]
@@ -116,7 +111,7 @@ html(lang="en")
                 div(class="footer-nav cell-fs-12 cell-sm-6 cell-md-4")
                     div(class="title text-left") BOLETÍN INFORMATIVO
                     div(class="text-center") Suscribete a nuetro newsletter y recibe nuestras promociones directamente en tu correo
-                    form(action="")
+                    form(id="form-newsLetter")
                         div(class="form-group")
                             input(type="email", id="email-suscribe", placeholder="Escribe aquí tu correo")
                         div(class="d-block-no-touch")
@@ -207,6 +202,7 @@ html(lang="en")
                     }).
                     done((response) => {
                         toastr.success(response.message)
+                        $('#form-newsLetter')[0].reset()
                         
                     }).
                     fail((error) => {
