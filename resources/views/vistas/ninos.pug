@@ -2,20 +2,19 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	//- script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
 block content
 	div(class="container")
 		ul(class="breadcrumbs")
 			li(class="page-item")
 				a(href="/" class="page-link") Inicio
 			li(class="page-item")
-				a(href="/ninos" class="page-link") Niños 
+				a(href="#" class="page-link") Niños 
 		div(class="wrap")
 			div(class="store-wrapper")
 				div(class="category_list")
+					a(href="#" class="category_item" category="all") Todo
 					a(href="#" class="category_item" category="futbol") Fùtbol 
-					a(href="#" class="category_item" category="Nataciòn") Nataciòn
+					a(href="#" class="category_item" category="Natación") Nataciòn
 					a(href="#" class="category_item" category="Tenis") Tenis
 					a(href="#" class="category_item" category="Básquetbol") Básquetbol
 				section(class="products-list")

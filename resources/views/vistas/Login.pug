@@ -13,13 +13,14 @@ block content
                         div(class="row")
                                 div(class="cell-md-6")
                                         h3 INICIA SESIÓN
-                                        form(action="", method="post")
+                                        form(action="/login", method="post")
+                                                !=csrf_field()
                                                 div(class="form-group")
-                                                        label Email
-                                                        input(type="email")
+                                                        label Email *
+                                                        input(type="email" name="email")
                                                 div(class="form-group")
-                                                        label Contraseña
-                                                        input(type="password")
+                                                        label Contraseña *
+                                                        input(type="password" name="password")
                                                 div
                                                         input(type="checkbox")
                                                         label Recordarme
@@ -32,37 +33,113 @@ block content
                                         div(style={color:"#888", 'padding-botom':'20px', 'border-bottom': "1px solid #eee", 'font-size':'12.5px', 'margin-bottom':"20px"}).
                                                 Al crear una cuenta con nuestra tienda podrás moverte más rápidamente por el proceso de pago, 
                                                 guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más.
-                                        form(action="", method="post")
+                                        form(id="form-register", class="form")
                                                 div(class="row")
-                                                        div(class="cell-md-6")
-                                                                label Nombre
-                                                                input(type="text")
-                                                        div(class="cell-md-6")
-                                                                label Apellido
-                                                                input(type="text")
-                                                        div(class="cell-md-6")
+                                                        div(class="form-md cell-md-6")
+                                                                label Nombre *
+                                                                input(type="text" name="name" id="name")
+                                                        div(class="form-md cell-md-6")
+                                                                label Apellido *
+                                                                input(type="text" name="last_name" id="last_name")
+                                                        div(class="form-md cell-md-6")
                                                                 label(style={'max-width':'100%'}) Sexo
                                                                 br
-                                                                input(type="radio", name="gender" value="MALE")
+                                                                input(type="radio", name="gender" value="1")
                                                                 label(for="MALE") Hombre
-                                                                input(type="radio", name="gender" value="FEMALE")
+                                                                input(type="radio", name="gender" value="2")
                                                                 label(for="MALE") Mujer
-                                                        div(class="cell-md-6")
+                                                        div(class="form-md cell-md-6")
                                                                 label Fecha de nacimiento
-                                                                input(type="text")
-                                                        div(class="cell-md-6")
+                                                                input(type="date" name="birthdate" id="birthdate")
+                                                        div(class="form-md cell-md-6")
                                                                 label Celular
-                                                                input(type="text")
-                                                        div(class="cell-md-6")
-                                                                label Email
-                                                                input(type="text", placeholder="email@dominio.com")
-                                                        div(class="cell-md-6")
-                                                                label Contraseña
-                                                                input(type="text")
+                                                                input(type="text" name="phone" id="phone")
+                                                        div(class="form-md cell-md-6")
+                                                                label Email *
+                                                                input(type="email", name="email", placeholder="email@dominio.com" id="email")
+                                                        div(class="form-md cell-md-6")
+                                                                label Contraseña *
+                                                                input(type="password" name="password" id="password")
                                                                 div(style={display:'block'}) La longitud mínima es de 6 caracteres
-                                                        div(class="cell-md-6")
-                                                                label Confirmar contraseña
-                                                                input(type="text")
+                                                        div(class="form-md cell-md-6")
+                                                                label Confirmar contraseña *
+                                                                input(type="password" name="confirm" id="confirm")
+                                                        
+                                        div(style={width:"100%"})
+                                                                button(class="button", id="btn-create", style={width:'100%','margin-top':"20px", color:"#888888"}) CREAR CUENTA
+block scripts
+        script.
+                $('#btn-create').on('click', () => {
+                        if($('#form-register').valid()){
+                        const formData = new FormData()
+                        formData.append("nombre", $("#name").val())
+                        formData.append("apellido", $("#last_name").val())
+                        formData.append("sexo", $('input[name="gender"]').val())
+                        formData.append("celular", $('#phone').val())
+                        formData.append("fecha_nacimiento", $("#birthdate").val())
+                        formData.append("email", $("#email").val())
+                        formData.append("password", $("#password").val())
+                        formData.append('evt', 'create')
+                        $.ajax({
+                                type: 'POST',
+                                data: formData,
+                                contentType: false,
+                                processData: false,
+                                }).
+                                done((response) => {
+                                    toastr.success(response.message)
+                                    $('span.mdb-error').remove()
+			            $('.mdb-error').removeClass('mdb-error')
+			            $('.active').removeClass('active')
+                                    $('#form-register')[0].reset()
+                                }).
+                                fail((error) => {
+                                        console.log(error)
+                                    $.each(error.responseJSON.errors, (index, el) => {
+                                        toastr.info(el)
+                                    });
+                                });
+                        }
+                        
+                })
+
+                $('#form-register').validate({
+                        rules:{
+                                name:{
+                                        required:true
+                                },
+                                "last_name":{
+                                        required:true
+                                },
+                                gender:{
+                                        required:false
+                                },
+                                birthdate:{
+                                        required:false
+                                },
+                                phone:{
+
+                                },
+                                email:{
+                                        required:true
+                                },
+                                password:{
+                                        required:true,
+                                        minlength:6,
+
+                                },
+                                confirm:{
+                                        required:true,
+                                        minlength:6,
+                                        equalTo: "#password"
+                                },
+
+
+                                
+                        }
+                })
+                
+        
 
                                   
 

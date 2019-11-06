@@ -4,17 +4,21 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="Content-Type", content="text/html")
+        meta(name="csrf-token", content!=csrf_token())
         link(rel="stylesheet", href=asset("css/metro.min.css"))
         link(rel="stylesheet", href=asset("/css/metro-colors.min.css"))
         link(rel="stylesheet", href=asset("/css/metro-icons.min.css"))
         link(rel="stylesheet", href=asset("/css/font-awesome.min.css"))
         link(rel="stylesheet", href=asset("/css/metro-all.min.css"))
-        link(rel="stylesheet", href=asset("https://cdn.metroui.org.ua/v4/css/metro.min.css"))
+        link(rel="stylesheet", href=asset("/css/toastr.min.css"))
         block styles
         title Innova Sport
         style.
             .hover {
                 background-color: #bd2211;
+            }
+            .mdb-error {
+            color: #CC0000;
             }
     body
     
@@ -28,14 +32,15 @@ html(lang="en")
                                 ul(class="app-bar-menu m-0 p-2")
                                     a(href="#" style={"list-style":'none', color:'white'}) Nuestros Conceptos
                                         ul(data-role="dropdown")
-                                            li: a(href="#") Invictus
+                                            li: a(hr
+                                            ef="#") Invictus
                                     a(href="/login" class="float-right" style={"list-style":'none', color:'white'}) Login / Registrate
         div(class="container-fluid bg-black pl-15 pr-15")
             div(class="row")
                 div(class="nav cell-sm-3 cell-md-2 p-0")
                     div(class="float-left")
-                        a(href="/")
-                            img(width="112px" height="100px" src="https://cdn.shopify.com/s/files/1/0899/2262/files/1180.png?4016")
+                        a(href="/home")
+                            img(width="112px" height="100px" src=asset("/img_innova/logo.png"))
                 div(class="cell-md-4 cell-sm-3 offset-sm-1 offset-md-1" style={'font-size': '13px'})
                     div(class="row fg-white")
                         div(class="cell-md-6 cell-sm-6 cell-lg-5 offset-lg-1")
@@ -54,14 +59,14 @@ html(lang="en")
                                     button(class="danger") Buscar
         div(class="container-fluid bg-black pl-15 pr-15")
             ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" id="menu-container" style={"list-style":'none'})
-                li #[a(href="#" title="Deporte" style={'font-size': '13px'}) Deporte]
+                li #[a(href="/deportes" title="Deporte") Deporte]
                 li #[a(href="/Hombre") Hombre]
                 li #[a(href="/mujeres") Mujeres]
                 li #[a(href="/ninos") Niños]
                 li #[a(href="/ninas") Niñas]
                 li #[a(href="/Uniformes") Uniformes]
                 li #[a(href="/jerseys") Jerseys]
-                li #[a(href="#") Outlet]
+                li #[a(href="/outlet") Outlet]
                 li(class="float-right") #[span(class="m-0") Carrito: $0.00]          
 
     block content
@@ -106,16 +111,21 @@ html(lang="en")
                 div(class="footer-nav cell-fs-12 cell-sm-6 cell-md-4")
                     div(class="title text-left") BOLETÍN INFORMATIVO
                     div(class="text-center") Suscribete a nuetro newsletter y recibe nuestras promociones directamente en tu correo
-                    form(action="")
+                    form(id="form-newsLetter")
                         div(class="form-group")
-                            input(type="email", placeholder="Escribe aquí tu correo")
+                            input(type="email", id="email-suscribe", placeholder="Escribe aquí tu correo")
                         div(class="d-block-no-touch")
-                            input(type="button", value="HOMBRE" class="button primary" style={width:"49%", 'border-radius':"50px 0 0 50px !important", margin:'10px 2px 0 0'})
-                            input(type="button", value="MUJER" class="button primary" style={width:"49%", 'border-radius':"0 50px 50px 0 !important", margin:'10px 2px 0 0'})
-                    div
-                        ul
-                            span(class="mif-github mif-2x")
-                            li: a(title="Facebook" class="mif-facebook2" href="https://www.facebook.com/innovasport" target="_blank")
+                            input(type="button", value="HOMBRE" class="button primary suscribe" style={width:"49%", 'border-radius':"50px 0 0 50px !important", margin:'10px 2px 0 0'})
+                            input(type="button", value="MUJER" class="button primary suscribe" style={width:"49%", 'border-radius':"0 50px 50px 0 !important", margin:'10px 2px 0 0'})
+                    div(style={'display':'block', margin:'10px 0 10px'}, class="text-left")
+                        a(title="Facebook" class="fg-white" href="https://www.facebook.com/innovasport" target="_blank" style={"margin":"0 4px"})
+                            span(class="mif-facebook2 mif-3x")
+                        a(title="Instagram" class="fg-white" href="http://www.instagram.com/innovasport" target="_blank" style={"margin":"0 4px"})
+                            span(class="mif-instagram mif-3x")
+                        a(title="Twitter" class="fg-white" href="https://www.twitter.com/#!/innovasport" target="_blank" style={"margin":"0 4px"})
+                            span(class="mif-twitter mif-3x")
+                        a(title="Youtube" class="fg-white" href="http://www.youtube.com/innovasportmx" target="_blank" style={"margin":"0 4px"})
+                            span(class="mif-youtube2 mif-3x")
         div(class="container")
             div(class="row")
                 div(class="cell-md-4 text-center")
@@ -134,12 +144,73 @@ html(lang="en")
                 div(class="for-bottom text-left") © 2019 Innovasport. Todos los Derechos Reservados.
 
     script(src=asset("js/metro.min.js"))
-    script(src="js/jquery-3.3.1.min.js")
+    script(src="js/jquery/dist/jquery.min.js")
     script(src=asset("/js/script.js"))
+    script(src=asset("/js/jquery-validation/dist/jquery.validate.min.js"))
+    script(src=asset("/js/jquery-validation/src/localization/messages_es.js"))
+    script(src=asset("/js/toastr.min.js"))
     script.
+        $.ajaxSetup({
+          headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+
+        $.validator.setDefaults({
+            highlight: function(element) {
+                $(element).closest('.form-md').addClass('mdb-error');
+                $(element).closest('.form-md').removeClass('has-feedback').addClass('mdb-error has-feedback');
+                
+            },
+              unhighlight: function(element) {
+                 $(element).closest('.form-md').removeClass('mdb-error');
+                 $(element).closest('.form-md').addClass('');
+              },
+              errorElement: 'span',
+              errorClass: 'mdb-error',
+              errorPlacement: function(error, element) {
+                if (element.parent('.fg-line').length){ 
+                  error.insertAfter(element.parent())
+                }
+                else if (element.is(':radio')) { 
+                  error.css({display: 'block', "margin-top": '16px'})
+                  $(element).parent().parent().append(error)
+                }
+                else if (element.is(':file')){ 
+                  error.insertAfter(element.parent().parent().parent())
+                }
+                else {error.insertAfter(element)};
+              }
+            });
+
         $('.h-menu').children().children().hover(function(){
             $(this).css('background-color', "#bd2211")
         }, function(){
             $(this).css('background-color', "black")
         })
+        toastr.options = {
+          "positionClass": 'toast-bottom-right'
+        }
+
+        $('.suscribe').on('click', () => {
+            if($('#email-suscribe').val() !== ""){
+                $.ajax({
+                    url:'/login',
+                    type: 'PUT',
+                    data: {email:$('#email-suscribe').val()},
+                    datatype:"json"
+                    }).
+                    done((response) => {
+                        toastr.success(response.message)
+                        $('#form-newsLetter')[0].reset()
+                        
+                    }).
+                    fail((error) => {
+                        toastr.info("Algo salió mal")
+                    });
+                }
+    
+            })
+    block scripts
+
           
