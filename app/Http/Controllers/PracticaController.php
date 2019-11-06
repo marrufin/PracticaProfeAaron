@@ -27,4 +27,7 @@ class PracticaController extends Controller
      public function Jersey(){
          return view('vistas.jersey');
      }
+     public function Outlet(){
+        return view('vistas.outlet');
+    }
 }
