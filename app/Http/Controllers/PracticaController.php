@@ -26,8 +26,23 @@ class PracticaController extends Controller
     }
      public function Jersey(){
          return view('vistas.jersey');
-     }
+    }
      public function Outlet(){
         return view('vistas.outlet');
+    }
+    public function Deportes(){
+        return view('vistas.deportes');
+    }
+    public function ninos(){
+        return view('vistas.ninos');
+   }
+    public function Hombre(){
+        return view('vistas.Hombre');
+    }
+    public function ninas(){
+        return view('vistas.ninas');
+    }
+    public function mujeres(){
+        return view('vistas.mujeres');
     }
 }

@@ -56,9 +56,9 @@ html(lang="en")
             ul(class="ml-auto h-menu bg-black fg-white collapsed mt-0 mb-0 d-block" id="menu-container" style={"list-style":'none'})
                 li #[a(href="#" title="Deporte" style={'font-size': '13px'}) Deporte]
                 li #[a(href="#") Hombres]
-                li #[a(href="#") Mujeres]
-                li #[a(href="#") Niños]
-                li #[a(href="#") Niñas]
+                li #[a(href="/mujeres") Mujeres]
+                li #[a(href="/ninos") Niños]
+                li #[a(href="/ninas") Niñas]
                 li #[a(href="#") Uniformes]
                 li #[a(href="/jerseys") Jerseys]
                 li #[a(href="#") Outlet]
@@ -135,6 +135,7 @@ html(lang="en")
 
     script(src=asset("js/metro.min.js"))
     script(src="js/jquery-3.3.1.min.js")
+    script(src=asset("/js/script.js"))
     script.
         $('.h-menu').children().children().hover(function(){
             $(this).css('background-color', "#bd2211")

@@ -1,0 +1,70 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="/ninos" class="page-link") Niños Oficiales
+	div(class="wrap")
+		div(class="store-wrapper")
+			div(class="category_list")
+				a(href="#" class="category_item" category="futbol") Fùtbol 
+				a(href="#" class="category_item" category="Nataciòn") Nataciòn
+				a(href="#" class="category_item" category="Tenis") Tenis
+				a(href="#" class="category_item" category="Básquetbol") Básquetbol
+			section(class="products-list")
+				div(class="product-item" category="futbol")
+					img(src=asset("/img_innova/ninos/1nin.jpg") , alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="futbol")
+					img(src=asset("/img_innova/ninos/2nin.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="futbol")
+					img(src=asset("/img_innova/ninos/3nin.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="futbol")
+					img(src=asset("/img_innova/ninos/4nin.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Nataciòn")
+					img(src=asset("/img_innova/ninos/1nat.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Nataciòn")
+					img(src=asset("/img_innova/ninos/2nat.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Nataciòn")
+					img(src=asset("/img_innova/ninos/3nat.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Nataciòn")
+					img(src=asset("/img_innova/ninos/4nat.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/ninos/1beb.jpg"), alt="OLV")
+					a(href="#") POSER
+				div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/ninos/2beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/ninos/3beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Tenis")
+					img(src=asset("/img_innova/ninos/4beb.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Básquetbol")
+					img(src=asset("/img_innova/ninos/1bas.png"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Básquetbol")
+					img(src=asset("/img_innova/ninos/2bas.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Básquetbol")
+					img(src=asset("/img_innova/ninos/3bas.jpg"), alt="OLV")
+					a(href="#") POSER
+                div(class="product-item" category="Básquetbol")
+					img(src=asset("/img_innova/ninos/4bas.jpg"), alt="OLV")
+					a(href="#") POSER
+               
