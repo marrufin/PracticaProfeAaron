@@ -1,0 +1,175 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	link(rel="stylesheet", href=asset("/css/pages.css"))
+	script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="/outlet" class="page-link") Outlet
+		div(class="wrap")
+			div(class="store-wrapper")
+				div(class="category_list")
+					a(href="#" class="category_item" category="descuento") DESCUENTO
+					a(href="#" class="category_item" category="precio") PRECIO
+					a(href="#" class="category_item" category="deporte") DEPORTE
+					a(href="#" class="category_item" category="tipo") TIPO
+					a(href="#" class="category_item" category="marca") MARCA
+					a(href="#" class="category_item" category="futbol") FÚTBOL
+					a(href="#" class="category_item" category="nfl") NFL
+					a(href="#" class="category_item" category="baseball") BASEBALL
+				section(class="products-list")
+
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-1.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TACHONES MERCURIAL
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $1,999.00
+								span(class="icon") 30%
+							div(id="price") $1,399.30
+					
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-2.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TACHONES NIKE JR
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $1,549.00
+								span(class="icon") 30%
+							div(id="price") $1,084.30
+						
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-3.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE SB PORTMORE
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $1,399.00
+								span(class="icon") 30%
+							div(id="price") $979.30
+			
+		
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-4.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TACHONES NIKE JR. PHANTOM
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $3,499.00
+								span(class="icon") 30%
+							div(id="price") $2,449.30
+
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-5.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TACHONES MERCURIALX
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $1,084.30
+								span(class="icon") 20%
+							div(id="price") $867.44
+
+					
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-6.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE EBERNON MID
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $1,259.30
+								span(class="icon") 20%
+							div(id="price") $1,007.44
+
+					
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-7.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") PROPEL
+							b(id="brand") HEELYS
+							div(class="old-price")
+								span $999.00
+								span(class="icon") 30%
+							div(id="price") $699.30
+
+					
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-8.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") TISHATSU RUNNER KNIT PS
+							b(id="brand") PUMA
+							div(class="old-price")
+								span $769.30
+								span(class="icon") 20%
+							div(id="price") $615.44
+
+					
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-9.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") PLAYERA ADIDAS FREELIFT
+							b(id="brand") ADIDAS
+							div(class="old-price")
+								span $559.30
+								span(class="icon") 20%
+							div(id="price") $447.44
+						
+		
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-10.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") PLAYERA NIKE SPRING
+							b(id="brand") NIKE
+							div(class="old-price")
+								span $499.00
+								span(class="icon") 51%
+							div(id="price") $220.01
+
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-11.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") PLAYERA PUMA CLASSICS 
+							b(id="brand") PUMA
+							div(class="old-price")
+								span $699.00
+								span(class="icon") 30%
+							div(id="price") $489.30
+
+
+					div(class="product-item" category="descuento")
+						span(id="cosito") DESCUENTO
+						img(src="/img_innova/Outlet/outlet-12.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") SHORT PUMA PACE NOVELTY 
+							b(id="brand") PUMA
+							div(class="old-price")
+								span $769.30
+								span(class="icon") 20%
+							div(id="price") $615.44
+
+						
+		
+

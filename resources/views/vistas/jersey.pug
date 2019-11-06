@@ -2,8 +2,8 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+	//- script(src=asset("/js/script.js"))
 	//- script(src=asset("/js/jquery-3.2.1.js"))
 block content
 	div(class="container")
@@ -11,8 +11,7 @@ block content
 			li(class="page-item")
 				a(href="/" class="page-link") Inicio
 			li(class="page-item")
-				a(href="#" class="page-link") Jerseys Oficiales
-	table(class="table" data-role="table" data-pagination-short-mode="true")
+				a(href="/jersey" class="page-link") Jerseys Oficiales
 		div(class="wrap")
 			div(class="store-wrapper")
 				div(class="category_list")
@@ -21,6 +20,8 @@ block content
 					a(href="#" class="category_item" category="nfl") NFL
 					a(href="#" class="category_item" category="baseball") BASEBALL
 				section(class="products-list")
+
+
 					div(class="product-item" category="futbol")
 						span(id="cosito") HOMBRE
 						img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
@@ -28,6 +29,8 @@ block content
 							div(id="description") Jersey Nike Boca Juniors Local
 							b(id="brand") NIKE
 							div(id="price") $1,200.00
+					
+
 					div(class="product-item" category="futbol")
 						span(id="cosito") HOMBRE
 						img(src="/img_innova/Hombres/14.jpg", alt="OLV")
@@ -35,6 +38,8 @@ block content
 							div(id="description") Jersey Charly Santos Local
 							b(id="brand") CHARLY
 							div(id="price") $1,200.00
+						
+
 					div(class="product-item" category="futbol")
 						span(id="cosito") HOMBRE
 						img(src="/img_innova/Hombres/16.jpg", alt="OLV")
@@ -56,6 +61,7 @@ block content
 							div(id="price") $719.20
 
 
+<<<<<<< HEAD
 					div(class="product-item" category="")
 						img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
 						a(href="#") POSER
@@ -65,6 +71,35 @@ block content
 					div(class="product-item" category="baseball")
 						img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
 						a(href="#") POSER
+=======
+					div(class="product-item" category="nfl")
+						span(id="cosito") HOMBRE
+						img(src="/img_innova/Hombres/1_NFL.jfif", alt="OLV")
+						div(class="container")
+							div(id="description") Jersey Nike Steelers
+							b(id="brand") NIKE
+							div(id="price") $979.00
+
+					
+					div(class="product-item" category="baseball")
+						span(id="cosito") HOMBRE
+						img(src="/img_innova/Hombres/1_MLB.jfif", alt="OLV")
+						div(class="container")
+							div(id="description") Jersey Majestic Astros
+							b(id="brand") MAJESTIC
+							div(id="price") $1,399.00
+
+					
+					div(class="product-item" category="nfl")
+						span(id="cosito") HOMBRE
+						img(src="/img_innova/Hombres/2_NFL.jfif", alt="OLV")
+						div(class="container")
+							div(id="description") Jersey Nike Panthers
+							b(id="brand") NIKE
+							div(id="price") $1,199.00
+
+					
+>>>>>>> 41819c60f44f962fceae0b567cf7106aa8137679
 					div(class="product-item" category="futbol")
 						span(id="cosito") MUJER
 						img(src="/img_innova/Mujeres/3.jpg", alt="OLV")
@@ -72,6 +107,12 @@ block content
 							div(id="description") Jersey Veracruz Local
 							b(id="brand") CHARLY
 							div(id="price") $879.20
+<<<<<<< HEAD
 					div(class="product-item" category="baseball")
 						img(src=asset("/img_innova/Hombres/2.jpg"), alt="OLV")
 						a(href="#") POSER
+=======
+						
+		
+
+>>>>>>> 41819c60f44f962fceae0b567cf7106aa8137679
