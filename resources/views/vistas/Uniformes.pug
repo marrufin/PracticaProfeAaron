@@ -1,0 +1,97 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+	//- script(src=asset("/js/script.js"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="#" class="page-link") Jerseys Oficiales
+		div(class="wrap")
+			div(class="store-wrapper")
+				div(class="category_list")
+					a(href="#" class="category_item" category="all") TODO
+					a(href="#" class="category_item" category="hombre") HOMBRE
+					a(href="#" class="category_item" category="mujer") MUJER
+					a(href="#" class="category_item" category="niños") NIÑOS
+				section(class="products-list")
+
+
+					div(class="product-item" category="niños")
+						span(id="cosito") NIÑOS
+						img(src="/img_innova/Ninos/1.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Conjunto Nike Dry Academy18
+							b(id="brand") NIKE
+							div(id="price") $1,249.00
+					
+
+					div(class="product-item" category="hombre")
+						span(id="cosito") HOMBRES
+						img(src="/img_innova/Ninos/6.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Conjunto Nike Academy 18
+							b(id="brand") NIKE
+							div(id="price") $1,399.00
+						
+
+					div(class="product-item" category="mujer")
+						span(id="cosito") MUJERES
+						img(src="/img_innova/Ninos/13.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Short Nike Park
+							b(id="brand") NIKE
+							div(id="price") $349.00
+			
+		
+					div(class="product-item" category="niños")
+						span(id="cosito") NIÑOS
+						img(src="/img_innova/Ninos/3.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Playera Nike Park VI
+							b(id="brand") NIKE
+							div(id="price") $349.00
+
+
+					div(class="product-item" category="mujer")
+                        span(id="cosito") MUJERES
+						img(src="/img_innova/Ninos/10.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") LIGA JERSEY W,M,Banco
+							b(id="brand") PUMA
+							div(id="price") $399.00
+
+					
+					div(class="product-item" category="niños")
+                        span(id="cosito") NIÑOS
+						img(src="/img_innova/Ninos/2.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Short Dry Academy
+							b(id="brand") NIKE
+							div(id="price") $299.00
+
+					
+					div(class="product-item" category="hombre")
+                        span(id="cosito") HOMBRES
+						img(src="/img_innova/Ninos/8.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Calceta Milano 16
+							b(id="brand") ADIDAS
+							div(id="price") $299.00
+
+					
+					div(class="product-item" category="mujer")
+						span(id="cosito") MUJER
+						img(src="/img_innova/Ninos/5.jpg", alt="OLV")
+						div(class="container")
+							div(id="description") Playera Nike Training Bib
+							b(id="brand") NIKE
+							div(id="price") $199.20
+						
+		
+

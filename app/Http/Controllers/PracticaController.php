@@ -45,4 +45,7 @@ class PracticaController extends Controller
     public function mujeres(){
         return view('vistas.mujeres');
     }
+    public function uniformes(){
+        return view('vistas.uniformes');
+    }
 }

@@ -11,60 +11,141 @@ block content
 				a(href="/" class="page-link") Inicio
 			li(class="page-item")
 				a(href="/ninos" class="page-link") Niños Oficiales
-	div(class="wrap")
-		div(class="store-wrapper")
-			div(class="category_list")
-				a(href="#" class="category_item" category="futbol") Fùtbol 
-				a(href="#" class="category_item" category="Nataciòn") Nataciòn
-				a(href="#" class="category_item" category="Tenis") Tenis
-				a(href="#" class="category_item" category="Básquetbol") Básquetbol
-			section(class="products-list")
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/ninos/1nin.jpg") , alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/ninos/2nin.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/ninos/3nin.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="futbol")
-					img(src=asset("/img_innova/ninos/4nin.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="Nataciòn")
-					img(src=asset("/img_innova/ninos/1nat.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="Nataciòn")
-					img(src=asset("/img_innova/ninos/2nat.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="Nataciòn")
-					img(src=asset("/img_innova/ninos/3nat.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Nataciòn")
-					img(src=asset("/img_innova/ninos/4nat.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="Tenis")
-					img(src=asset("/img_innova/ninos/1beb.jpg"), alt="OLV")
-					a(href="#") POSER
-				div(class="product-item" category="Tenis")
-					img(src=asset("/img_innova/ninos/2beb.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Tenis")
-					img(src=asset("/img_innova/ninos/3beb.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Tenis")
-					img(src=asset("/img_innova/ninos/4beb.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Básquetbol")
-					img(src=asset("/img_innova/ninos/1bas.png"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Básquetbol")
-					img(src=asset("/img_innova/ninos/2bas.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Básquetbol")
-					img(src=asset("/img_innova/ninos/3bas.jpg"), alt="OLV")
-					a(href="#") POSER
-                div(class="product-item" category="Básquetbol")
-					img(src=asset("/img_innova/ninos/4bas.jpg"), alt="OLV")
-					a(href="#") POSER
-               
+		div(class="wrap")
+			div(class="store-wrapper")
+				div(class="category_list")
+					a(href="#" class="category_item" category="all") Todo
+					a(href="#" class="category_item" category="futbol") Fùtbol 
+					a(href="#" class="category_item" category="Nataciòn") Nataciòn
+					a(href="#" class="category_item" category="Tenis") Tenis
+					a(href="#" class="category_item" category="Básquetbol") Básquetbol
+				section(class="products-list")
+					div(class="product-item" category="futbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/1nin.jpg") , alt="OLV")
+						div(class="container")
+							div(id="description") JERSEY PUMA CHIVAS
+							b(id="brand") Puma
+							div(id="price") $1,299.00
+
+					div(class="product-item" category="futbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/2nin.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") JERSEY ADIDAS TIGRES
+							b(id="brand") ADIDAS
+							div(id="price")$1,299.00
+
+					div(class="product-item" category="futbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/3nin.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") JERSEY NIKE PUMAS
+							b(id="brand") Nike
+							div(id="price")$1,299.00
+
+					div(class="product-item" category="futbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/4nin.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") UNIFORME
+							b(id="brand") Nike
+							div(id="price")$1,299.00
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/1nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") SHORT NIKE
+							b(id="brand") Nike
+							div(id="price")$479.40
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/2nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") sport
+							div(id="price")$299.00
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/3nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price")$499.00
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/4nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") SHORT NIKE
+							b(id="brand") Nike
+							div(id="price")$749.00
+
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/1beb.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE
+							b(id="brand") Nike
+							div(id="price")$3,499.00
+
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/2beb.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE
+							b(id="brand") Nike
+							div(id="price")$1,499.00
+
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/3beb.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE
+							b(id="brand") Nike
+							div(id="price")$1,899.00
+
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/4beb.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TENIS NIKE
+							b(id="brand") Nike
+							div(id="price")$1,299.00
+
+					div(class="product-item" category="Básquetbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/1bas.png"), alt="OLV")
+						div(class="container")
+							div(id="description") JERSEY NIKE
+							b(id="brand") Nike
+							div(id="price")$1,499.00
+
+					div(class="product-item" category="Básquetbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/2bas.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") PLAYERA JORDAN
+							b(id="brand") Nike
+							div(id="price")$379.00
+
+					div(class="product-item" category="Básquetbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/3bas.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") PANTALÓN NIKE
+							b(id="brand") Nike
+							div(id="price")$549.00
+
+					div(class="product-item" category="Básquetbol")
+						span(id="cosito") Niños
+						img(src=asset("/img_innova/ninos/4bas.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") SUDADERA NIKE
+							b(id="brand") Nike
+							div(id="price")$749.00
+					
+				
