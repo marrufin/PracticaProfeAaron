@@ -2,8 +2,6 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	//- script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
 block content
 	div(class="container")
 		ul(class="breadcrumbs")
@@ -14,6 +12,7 @@ block content
 	div(class="wrap")
 		div(class="store-wrapper")
 			div(class="category_list")
+				a(href="#" class="category_item" category="all") Todo
 				a(href="#" class="category_item" category="vestidos") Vestidos
 				a(href="#" class="category_item" category="Acuáticos") Acuáticos
 				a(href="#" class="category_item" category="Tenis") Tenis
@@ -21,62 +20,164 @@ block content
                 a(href="#" class="category_item" category="Short") Short 
 			section(class="products-list")
 				div(class="product-item" category="vestidos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/1ves.jpg") , alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+                            div(id="description") VESTIDO COURT DY
+                            b(id="brand") NIKE
+                            div(id="price")$769.30
+
 				div(class="product-item" category="vestidos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/2ves.jpg"), alt="OLV")
-					a(href="#") POSER
+                    div(class="container")
+							div(id="description") VESTIDO ADIDAS
+							b(id="brand") ADIDAS
+							div(id="price")$899.58
+						
+
 				div(class="product-item" category="vestidos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/3ves.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") VESTIDO ADIDAS
+							b(id="brand") ADIDAS
+							div(id="price")$899.58
+
                 div(class="product-item" category="vestidos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/4ves.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") VESTIDO
+							b(id="brand") NIKE
+							div(id="price")$769.30
+
 				div(class="product-item" category="Acuáticos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/1traje.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price")$655.58
+
 				div(class="product-item" category="Acuáticos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/2traje.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price") $799.00
+
 				div(class="product-item" category="Acuáticos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/3traje.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price")$955.58
+
                 div(class="product-item" category="Acuáticos")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/4traje.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price")$755.58
+
 				div(class="product-item" category="Tenis")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/1beb.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TENIS NIKE
+							b(id="brand") Nike
+							div(id="price")$1,299.00
+
 				div(class="product-item" category="Tenis")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/2beb.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") TENIS UNDER ARMOUR
+							b(id="brand") UNDER ARMOUR
+							div(id="price")$1,899.00
+
                 div(class="product-item" category="Tenis")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/3beb.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") Tenis
+							b(id="brand") Nike
+							div(id="price")$755.58
+
                 div(class="product-item" category="Tenis")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/4beb.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") Tenis
+							b(id="brand") Nike
+							div(id="price")$755.58
+
                 div(class="product-item" category="LEGGING")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/1LEGGING.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") LEGGING
+							b(id="brand") Nike
+							div(id="price")$559.58
+
                 div(class="product-item" category="LEGGING")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/2LEGGING.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") LEGGING
+							b(id="brand") Adidas
+							div(id="price")$559.58
+
                 div(class="product-item" category="LEGGING")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/3LEGGING.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") ALLOVER GRAPHIC 
+							b(id="brand") Adidas
+							div(id="price")$350.30
+
                 div(class="product-item" category="LEGGING")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/4LEGGING.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") LEGGING GU
+							b(id="brand") Nike
+							div(id="price")$454.30
+
                 div(class="product-item" category="Short")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/1Short.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") SHORT PUMA
+							b(id="brand") Puma
+							div(id="price")$479.40
+
+
                 div(class="product-item" category="Short")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/2Short.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") SHORT PUMA
+							b(id="brand") PUMA
+							div(id="price")$379.40
+
+
                 div(class="product-item" category="Short")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/3Short.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") SHORT 
+							b(id="brand") ADIDAS
+							div(id="price")$279.40
+
                 div(class="product-item" category="Short")
+                    span(id="cosito") Mujeres
 					img(src=asset("/img_innova/mujeres/5Short.jpg"), alt="OLV")
-					a(href="#") POSER
+					div(class="container")
+							div(id="description") SHORT NIKE
+							b(id="brand") Nike
+							div(id="price")$479.40

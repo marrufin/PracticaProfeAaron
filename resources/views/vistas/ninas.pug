@@ -2,8 +2,6 @@ extends /layouts/main
 
 block styles
 	link(rel="stylesheet", href=asset("/css/estilos.css"))
-	//- script(src=asset("/js/jquery-3.2.1.js"))
-	script(src=asset("/js/script.js"))
 block content
 	div(class="container")
 		ul(class="breadcrumbs")
@@ -14,8 +12,9 @@ block content
 		div(class="wrap")
 			div(class="store-wrapper")
 				div(class="category_list")
+					a(href="#" class="category_item" category="all") Todo
 					a(href="#" class="category_item" category="Mochilas") Mochilas
-					a(href="#" class="category_item" category="Nataciòn") Nataciòn
+					a(href="#" class="category_item" category="Natación") Nataciòn
 					a(href="#" class="category_item" category="Tenis") Tenis
 					a(href="#" class="category_item" category="LEGGING") Legging
 					a(href="#" class="category_item" category="Calcetas") Calcetas 
