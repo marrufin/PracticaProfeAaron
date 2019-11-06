@@ -1,0 +1,140 @@
+extends /layouts/main
+
+block styles
+	link(rel="stylesheet", href=asset("/css/estilos.css"))
+	//- script(src=asset("/js/jquery-3.2.1.js"))
+	script(src=asset("/js/script.js"))
+block content
+	div(class="container")
+		ul(class="breadcrumbs")
+			li(class="page-item")
+				a(href="/" class="page-link") Inicio
+			li(class="page-item")
+				a(href="/ninas" class="page-link") Niñas Oficiales
+		div(class="wrap")
+			div(class="store-wrapper")
+				div(class="category_list")
+					a(href="#" class="category_item" category="Mochilas") Mochilas
+					a(href="#" class="category_item" category="Nataciòn") Nataciòn
+					a(href="#" class="category_item" category="Tenis") Tenis
+					a(href="#" class="category_item" category="LEGGING") Legging
+					a(href="#" class="category_item" category="Calcetas") Calcetas 
+				section(class="products-list")
+
+					div(class="product-item" category="Mochilas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/1moch.jpg") , alt="OLV")
+						div(class="container")
+							div(id="description") MOCHILA ADIDAS 
+							b(id="brand") Adidas
+							div(id="price") $699.00
+
+					div(class="product-item" category="Mochilas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/2moch.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") BOLSA ADIDAS JUVENTUS
+							b(id="brand") Adidas
+							div(id="price") $399.00
+
+					div(class="product-item" category="Mochilas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/3moch.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") MOCHILA NIKE
+							b(id="brand") Nike
+							div(id="price") $499.00
+
+					div(class="product-item" category="Mochilas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/4moch.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") Jersey Dorados Local
+							b(id="brand") CHARLY
+							div(class="old-price")
+								span $599.00
+								span(class="icon") 30%
+							div(id="price") $335.44
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/1nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") MOCHILA NIKE
+							b(id="brand") Nike
+							div(id="price") $499.00
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/2nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price") $799.00
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/3nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") TRAJE DE BAÑO
+							b(id="brand") Nike
+							div(id="price")$755.58
+
+					div(class="product-item" category="Nataciòn")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/4nat.jpg"), alt="OLV")
+						div(class="container")
+							div(id="description") SANDALIAS NIKE
+							b(id="brand") Nike
+							div(id="price") $799.00
+
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/1beb.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/2beb.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/3beb.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Tenis")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/4beb.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="LEGGING")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/1LEGGING.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="LEGGING")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/2LEGGING.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="LEGGING")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/3LEGGING.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Calcetas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/4Calcetas.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Calcetas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/1Calcetas.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Calcetas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/2Calcetas.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Calcetas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/3Calcetas.jpg"), alt="OLV")
+						a(href="#") POSER
+					div(class="product-item" category="Calcetas")
+						span(id="cosito") Niñas
+						img(src=asset("/img_innova/ninas/5Calcetas.jpg"), alt="OLV")
+						a(href="#") POSER
+               
+               
